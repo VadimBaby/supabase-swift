@@ -67,7 +67,7 @@ build-for-library-evolution:
 
 DOC_WARNINGS = $(shell xcodebuild clean docbuild \
 	-scheme Supabase \
-	-destination platform="$(PLATFORM_MACOS)" \
+	-destination platform="$(PLATFORM_IOS)" \
 	-quiet \
 	2>&1 \
 	| grep "couldn't be resolved to known documentation" \
